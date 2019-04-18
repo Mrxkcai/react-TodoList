@@ -12,6 +12,7 @@ class Todolist extends Component{
     }
 
     render (){
+        // 父组件render执行的时候 子组件render函数也会执行
         // es6 解构赋值
         const { content } = this.props
         return (
@@ -34,7 +35,7 @@ Todolist.propTypes = {
 }
 
 Todolist.defaultProps = {
-    test:'22'
+    test:''
 }
 
 

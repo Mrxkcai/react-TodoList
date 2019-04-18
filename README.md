@@ -87,8 +87,24 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 ### 9 map循环体需要添加key值 key添加在循环体最外层代码块上
 
-### 10 es6新写法 this.setState((prevState) => ({}) ) prevState参数指代前一个state
+### 10 es6新写法 this.setState((prevState) => ({}), () => { 这是一个异步的函数，最后接收一个回调函数 } ) prevState参数指代前一个state
 
 ### 11 在class申明的组件外面使用PropTypes. = {} 和 defaultProps. = {} dangerousInnerHTMl使用时注意默认值不生效
 
-### 12 
+### 12 react之所以提升性能，是因为生成了虚拟DOM，它是js对象，方便对比。对比真实DOM会调用application api 十分消耗性能
+
+### 13 diff => diffrence  同层比对
+
+### 14 ref用法是需要获取DOM元素时使用的，ref = { () => {this.'' = ''}},但在react中尽量避免操作DOM
+
+### 15 组件生命周期函数 
+###    componentWillMount()
+###    render()  
+###    componentDidMount() 
+###    componentWillReceiveProps()  子组件 组件第一次出现时不触发，第二次接收props时触发
+###    shouldComponentUpdate() 
+###    componentWillUpdate() 
+###    componentDidUpdate() 
+###    componentWillUnmount()       组建剔除时触发
+
+### 16 react 请求接口先安装axios yarn add axios

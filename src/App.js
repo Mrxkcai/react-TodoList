@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from 'react';
+import axios from 'axios'
 import './App.css';
 
 import Todolist from './components/Todolist.js'
@@ -8,6 +9,7 @@ import Todolist from './components/Todolist.js'
 class App extends Component {
   constructor(props){
     super(props)
+    // 当组件state或者props数据改变时 render函数就会执行
     this.state = {
       list:[ ],
       value:'请输入待办事项',
@@ -18,6 +20,13 @@ class App extends Component {
     this.handlechange = this.handlechange.bind(this)
     this.handleclick = this.handleclick.bind(this)
     this.handleitem = this.handleitem.bind(this)
+  }
+
+  // 最适合放axios的钩子函数
+  componentDidMount() {
+    axios.get('')
+    .then((res) => {})
+    .catch(() => {})
   }
 
   // 点击添加
