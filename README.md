@@ -69,7 +69,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 
 
-### 1 <label>中for需替换成 htmlFor
+### 1 <label> 中for需替换成 htmlFor
 
 ### 2 class 写成 className
 
@@ -89,4 +89,6 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 ### 10 es6新写法 this.setState((prevState) => ({}) ) prevState参数指代前一个state
 
-### 11 
+### 11 在class申明的组件外面使用PropTypes. = {} 和 defaultProps. = {} dangerousInnerHTMl使用时注意默认值不生效
+
+### 12 
