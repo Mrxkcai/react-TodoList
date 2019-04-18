@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-class Todolist extends Component{
+class Todolist extends Component{ 
     constructor(props) {
         super(props)
         this.itemClick = this.itemClick.bind(this)
