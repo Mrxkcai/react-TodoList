@@ -7,6 +7,15 @@ class Todolist extends Component{
         this.itemClick = this.itemClick.bind(this)
     }
 
+    // 组件是否需要被更新
+    shouldComponentUpdate(nextProps, nextState) {
+        if(nextProps !== this.props.content){
+            return true
+        }else{
+            return false
+        }
+    }
+
     itemClick() {
         this.props.delete(this.props.index)
     }
@@ -20,7 +29,7 @@ class Todolist extends Component{
                 // 阻止html转义
             //    dangerouslySetInnerHTML={{ __html: content}}
             >
-            {this.props.test} {this.props.content}
+            {this.props.test} {content}
             </li>
         )
     }

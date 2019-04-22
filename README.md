@@ -108,3 +108,13 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 ###    componentWillUnmount()       组建剔除时触发
 
 ### 16 react 请求接口先安装axios yarn add axios
+
+### 17 shouldComponentUpdate(nextProps, nextState){}的使用
+
+### 18 学习react动画 安装npm install react-transition-group --save && yarn add react-transition-group
+
+### 19 配合antd ui框架使用
+
+### 20 createStore() store.dispatch() store.subscribe() store.getState() 四个方法
+
+### 21 
