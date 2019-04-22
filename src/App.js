@@ -1,12 +1,12 @@
 import React, { Component, Fragment } from 'react';
 import { CSSTransition } from 'react-transition-group';
 import { Input, Button } from 'antd';
-import axios from 'axios'
 import './App.css';
 import 'antd/dist/antd.css';
 import store from './store'
 
 import Todolist from './components/Todolist.js'
+import { getTodolist } from './store/actionCreators'
 
 
 //定义一个React组件 一个React组件必须包含一个 render函数 React强调面向数据编程
@@ -33,18 +33,12 @@ class App extends Component {
 
   // 最适合放axios的钩子函数
   componentDidMount() {
-    console.log("componentDidMount")
-    axios.get('/api/todolist')
-    .then((res) => {
-      
-    })
-    .catch((err) => {
-      
-    })
+    const action = getTodolist();
+    store.dispatch(action)
+    
   }
 
   storeChange() {
-    console.log(store.getState())
     this.setState(store.getState())
   }
 

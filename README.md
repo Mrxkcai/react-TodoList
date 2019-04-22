@@ -117,4 +117,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 ### 20 createStore() store.dispatch() store.subscribe() store.getState() 四个方法
 
-### 21 
+### 21 无状态组件接收一个props
